@@ -5,20 +5,24 @@
 [![ESP32](https://img.shields.io/badge/ESP32-IoT-orange.svg)](https://www.espressif.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Platform cerdas untuk mengumpulkan dan mendaur ulang minyak jelantah (used cooking oil) dengan teknologi IoT. Aplikasi ini menghubungkan rumah tangga, warung, dan restoran dengan pengepul minyak jelantah untuk diolah menjadi biodiesel.
+Platform cerdas untuk mengumpulkan dan mendaur ulang minyak jelantah (used cooking oil) dengan teknologi IoT full-stack. Aplikasi ini menghubungkan rumah tangga, warung, dan restoran dengan pengepul minyak jelantah untuk diolah menjadi biodiesel.
 
-![Architecture](docs/architecture.png)
+**Peneliti:** Shafira Ailah Azzahra (NIM: 2602208271)  
+**Universitas:** Bina Nusantara University  
+**Tahun:** 2025-2026
 
-## 📋 Table of Contents
+## 📋 Quick Navigation
 
 - [Features](#-features)
 - [System Architecture](#-system-architecture)
-- [Hardware Requirements (IoT)](#-hardware-requirements-iot)
-- [Software Requirements](#-software-requirements)
+- [Hardware Requirements](#-hardware-requirements-iot)
+- [Quick Start](#quick-start)
 - [Installation](#-installation)
 - [API Documentation](#-api-documentation)
-- [IoT Setup Guide](#-iot-setup-guide)
-- [Screenshots](#-screenshots)
+- [IoT Setup](#-iot-setup-guide)
+- [Testing](#-testing)
+- [Troubleshooting](#-troubleshooting)
+- [FAQ](#-faq)
 - [Contributing](#-contributing)
 - [License](#-license)
 
@@ -145,35 +149,7 @@ Platform cerdas untuk mengumpulkan dan mendaur ulang minyak jelantah (used cooki
 - **Cara Kerja**: Digital sensor dengan protokol 1-Wire
 - **Pentingnya**: Minyak jelantah yang disimpan terlalu lama atau di suhu tinggi akan menurun kualitasnya
 
-## 💻 Software Requirements
-
-### Development Tools
-- Node.js v18+
-- Python 3.10+
-- Arduino IDE 2.0+
-- VS Code
-- Git
-
-### Mobile App
-- React Native 0.73+
-- Expo SDK 50+
-- React Navigation
-- Axios
-- AsyncStorage
-
-### Backend
-- Python 3.10+
-- Flask 3.0+
-- SQLAlchemy
-- Flask-JWT-Extended
-- PostgreSQL 15+
-
-### IoT
-- Arduino IDE
-- ESP32 Board Package
-- Required Libraries (lihat di folder `/iot`)
-
-## 🚀 Installation
+## � Quick Start
 
 ### 1. Clone Repository
 
@@ -360,12 +336,6 @@ Install:
 ### Mobile App
 | Home | Container Detail | History |
 |------|------------------|---------|
-| ![Home](docs/screenshots/home.png) | ![Detail](docs/screenshots/detail.png) | ![History](docs/screenshots/history.png) |
-
-### IoT Device
-| Prototype | OLED Display |
-|-----------|--------------|
-| ![Prototype](docs/screenshots/prototype.jpg) | ![OLED](docs/screenshots/oled.jpg) |
 
 ## 📁 Project Structure
 
