@@ -33,16 +33,16 @@ def create_app(config_class=Config):
 
     # Register blueprints
     from app.routes.auth import auth_bp
-    from app.routes.containers import containers_bp
-    from app.routes.transactions import transactions_bp
+    from app.routes.locations import locations_bp
+    from app.routes.tutorials import tutorials_bp
+    from app.routes.reviews import reviews_bp
     from app.routes.users import users_bp
-    from app.routes.iot import iot_bp
 
     app.register_blueprint(auth_bp, url_prefix='/api/v1/auth')
-    app.register_blueprint(containers_bp, url_prefix='/api/v1/containers')
-    app.register_blueprint(transactions_bp, url_prefix='/api/v1/transactions')
+    app.register_blueprint(locations_bp, url_prefix='/api/v1/locations')
+    app.register_blueprint(tutorials_bp, url_prefix='/api/v1/tutorials')
+    app.register_blueprint(reviews_bp, url_prefix='/api/v1/reviews')
     app.register_blueprint(users_bp, url_prefix='/api/v1/users')
-    app.register_blueprint(iot_bp, url_prefix='/api/v1/iot')
 
     # Create database tables
     with app.app_context():
