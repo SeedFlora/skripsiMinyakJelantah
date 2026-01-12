@@ -160,26 +160,28 @@ Indonesia menghasilkan **500,000 ton minyak jelantah/tahun** dari sektor food se
 
 ### Mobile App (React Native)
 - 🔐 User authentication (Login/Register)
-- 📍 GPS location for pickup scheduling
-- 📊 Dashboard volume minyak real-time
+- 📍 **Maps Integration** - Cari penampungan minyak jelantah terdekat (Google Maps)
+- 📊 Dashboard untuk tracking kontainer pribadi
 - 💰 Tracking pendapatan dari penjualan
-- 🔔 Push notification ketika container penuh
-- 📅 Scheduling pickup dengan pengepul
+- 📱 **Tutorial & Edukasi** - Tips, FAQ, cara menggunakan app
+- 🔔 Push notification saat penampungan terdekat menerima minyak
+- 📅 Scheduling pickup dengan penampungan
 - 📈 Riwayat transaksi
 
 ### Backend API (Python Flask)
 - RESTful API endpoints
 - JWT Authentication
-- Real-time data dari IoT sensors
+- Maps API integration (Google Maps)
+- Tutorial & educational content management
 - Database management
 - Push notification service
 
-### IoT Smart Container
-- 📏 Monitoring volume minyak otomatis
-- 🌡️ Sensor suhu untuk kualitas minyak
-- 📶 WiFi connectivity
-- ⚡ Low power consumption
-- 🚨 Alert ketika container 80% penuh
+### Feature: Maps & Locations
+- 📍 Real-time location of waste oil collection centers
+- 🗺️ Distance calculation & directions
+- 📌 Opening hours, contact, ratings
+- 🔄 Filter by location & rating
+- ℹ️ Quality standards & certifications
 
 ## 🏗️ System Architecture
 
