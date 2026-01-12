@@ -31,39 +31,119 @@ Teknologi mobile dan internet of things (IoT) telah terbukti menjadi enabler kun
 
 ## RUMUSAN MASALAH
 
-Berdasarkan latar belakang yang telah dipaparkan, penelitian ini dirumuskan dengan pertanyaan utama: **Bagaimana merancang dan mengimplementasikan platform digital berbasis geolokasi yang dapat meningkatkan akses dan inklusivitas dalam sistem daur ulang minyak jelantah sambil menyediakan konten edukatif untuk meningkatkan kesadaran dan partisipasi masyarakat?** 
+1. **Pertanyaan Utama:** Bagaimana merancang dan mengimplementasikan platform digital berbasis geolokasi yang dapat meningkatkan akses dan inklusivitas dalam sistem daur ulang minyak jelantah sambil menyediakan konten edukatif untuk meningkatkan kesadaran dan partisipasi masyarakat?
 
-Pertanyaan utama ini dijabarkan menjadi empat sub-pertanyaan penelitian yang spesifik. Pertama, **bagaimana sistem informasi geografi dapat diintegrasikan dengan aplikasi mobile untuk memfasilitasi penemuan lokasi pengumpul minyak jelantah dan menghubungkan konsumen dengan infrastruktur daur ulang yang terdekat?** Pertanyaan ini berfokus pada aspek teknis implementasi teknologi Google Maps dan algoritma optimisasi rute untuk meningkatkan aksesibilitas. Kedua, **bagaimana modul konten edukatif tentang daur ulang minyak jelantah, dampak lingkungan, dan manfaat kesehatan dapat dirancang dan diintegrasikan dalam aplikasi untuk meningkatkan literasi konsumen?** Pertanyaan ini mengeksplorasi dimensi pembelajaran dan awareness dalam platform digital.
+2. **Sub-Pertanyaan Teknis:** Bagaimana sistem informasi geografi dapat diintegrasikan dengan aplikasi mobile untuk memfasilitasi penemuan lokasi pengumpul minyak jelantah dan menghubungkan konsumen dengan infrastruktur daur ulang yang terdekat?
 
-Ketiga, **bagaimana mekanisme sistem review dan rating dapat meningkatkan akuntabilitas, kepercayaan, dan transparansi dalam ekosistem daur ulang minyak jelantah?** Pertanyaan ini mengatasi aspek kepercayaan dan kualitas dalam proses interaksi antar pengguna. Keempat, **apa dampak kuantitatif dari implementasi platform JelantahKu terhadap peningkatan volume pengumpulan, efisiensi logistik, kesadaran publik, dan kontribusi terhadap target SDG yang relevan dalam kurun waktu implementasi pilot?** Pertanyaan akhir ini mengukur keberhasilan dan dampak nyata dari solusi yang dikembangkan.
+3. **Sub-Pertanyaan Edukasi:** Bagaimana modul konten edukatif tentang daur ulang minyak jelantah, dampak lingkungan, dan manfaat kesehatan dapat dirancang dan diintegrasikan dalam aplikasi untuk meningkatkan literasi konsumen?
+
+4. **Sub-Pertanyaan Akuntabilitas:** Bagaimana mekanisme sistem review dan rating dapat meningkatkan akuntabilitas, kepercayaan, dan transparansi dalam ekosistem daur ulang minyak jelantah?
+
+5. **Sub-Pertanyaan Dampak:** Apa dampak kuantitatif dari implementasi platform JelantahKu terhadap peningkatan volume pengumpulan, efisiensi logistik, kesadaran publik, dan kontribusi terhadap target SDG yang relevan dalam kurun waktu implementasi pilot?
 
 ---
 
 ## TUJUAN PENELITIAN
 
-Tujuan penelitian ini adalah mengembangkan dan mengevaluasi platform digital terintegrasi yang meningkatkan akses dan inklusivitas dalam sistem daur ulang minyak jelantah di Indonesia. Tujuan penelitian ini dibagi menjadi dua kategori utama: tujuan teknis dan tujuan dampak.
+### Tujuan Teknis
 
-Tujuan teknis penelitian mencakup lima dimensi implementasi. Pertama, merancang dan mengembangkan aplikasi mobile berbasis React Native yang mengintegrasikan Google Maps API untuk visualisasi real-time lokasi pengumpul minyak jelantah, dengan fitur navigasi dan kalkulasi jarak otomatis untuk pengalaman pengguna yang optimal. Kedua, membangun backend REST API berbasis Flask yang mengelola data geolokasi, profil pengguna, pemetaan lokasi pengumpul, dan sistem manajemen tutorial dengan performa tinggi dan skalabilitas yang memadai. Ketiga, mengimplementasikan sistem autentikasi berbasis JWT dan manajemen data yang aman untuk melindungi privasi pengguna dan memastikan integritas data dalam platform. Keempat, mengintegrasikan modul konten edukatif dengan lima kategori pembelajaran (Lingkungan, Penyimpanan, Memasak, Daur Ulang, Kesehatan) yang dirancang berdasarkan prinsip-prinsip pedagogis modern dan konteks lokal Indonesia. Kelima, membangun sistem review dan rating yang memungkinkan pengguna memberikan feedback berkualitas, meningkatkan transparansi, dan menciptakan incentive untuk peningkatan kualitas layanan pengumpul.
+1. Merancang dan mengembangkan aplikasi mobile berbasis React Native yang mengintegrasikan Google Maps API untuk visualisasi real-time lokasi pengumpul minyak jelantah dengan fitur navigasi dan kalkulasi jarak otomatis.
 
-Tujuan dampak penelitian mencakup aspek-aspek keberlanjutan dan kontribusi sosial. Penelitian ini bertujuan meningkatkan aksesibilitas dan inklusi dalam sistem daur ulang dengan memberikan informasi lokasi pengumpul yang akurat dan mudah diakses kepada seluruh segmen masyarakat, khususnya rumah tangga urban dan food service dengan akses internet. Penelitian ini juga menargetkan peningkatan kesadaran publik tentang pentingnya daur ulang minyak jelantah, dampak lingkungan, dan manfaat kesehatan melalui konten edukatif yang interaktif dan relevan. Selain itu, penelitian bertujuan meningkatkan efisiensi sistem pengumpulan minyak jelantah dengan memfasilitasi koordinasi yang lebih baik antara konsumen dan pengumpul, mengurangi biaya transportasi, dan meningkatkan volume pengumpulan. Terakhir, penelitian ini bertujuan berkontribusi pada pencapaian target Sustainable Development Goals (SDGs) yang relevan, khususnya SDG 4 (Pendidikan Berkualitas), SDG 12 (Konsumsi dan Produksi Berkelanjutan), dan SDG 13 (Aksi Iklim).
+2. Membangun backend REST API berbasis Flask yang mengelola data geolokasi, profil pengguna, pemetaan lokasi pengumpul, dan sistem manajemen tutorial dengan performa tinggi.
+
+3. Mengimplementasikan sistem autentikasi berbasis JWT dan manajemen data yang aman untuk melindungi privasi pengguna dan integritas data dalam platform.
+
+4. Mengintegrasikan modul konten edukatif dengan lima kategori pembelajaran: Lingkungan, Penyimpanan, Memasak, Daur Ulang, dan Kesehatan.
+
+5. Membangun sistem review dan rating yang memungkinkan pengguna memberikan feedback berkualitas dan meningkatkan transparansi layanan pengumpul.
+
+### Tujuan Dampak
+
+1. Meningkatkan aksesibilitas dan inklusi dalam sistem daur ulang dengan memberikan informasi lokasi pengumpul yang akurat kepada rumah tangga urban dan food service.
+
+2. Meningkatkan kesadaran publik tentang pentingnya daur ulang minyak jelantah, dampak lingkungan, dan manfaat kesehatan melalui konten edukatif.
+
+3. Meningkatkan efisiensi sistem pengumpulan minyak jelantah dengan memfasilitasi koordinasi yang lebih baik antara konsumen dan pengumpul.
+
+4. Berkontribusi pada pencapaian target Sustainable Development Goals (SDG 4, SDG 12, dan SDG 13).
 
 ---
 
 ## MANFAAT PENELITIAN
 
-Penelitian pengembangan platform JelantahKu memberikan manfaat multidimensi bagi berbagai stakeholder dan dampak jangka panjang terhadap keberlanjutan lingkungan dan kesejahteraan masyarakat.
+### Manfaat Akademis
 
-Manfaat akademis penelitian ini mencakup kontribusi signifikan terhadap bidang teknologi informasi, keberlanjutan lingkungan, dan pengembangan aplikasi sosial. Penelitian ini mendemonstrasikan integrasi praktis antara teknologi geolokasi (Google Maps API), framework mobile modern (React Native), dan prinsip-prinsip user-centered design dalam konteks permasalahan sosial-lingkungan lokal. Hasil penelitian ini dapat menjadi referensi bagi penelitian serupa di bidang waste management, circular economy, dan technology for social good. Metodologi yang dikembangkan, khususnya pendekatan kombinasi antara fitur geolokasi, konten edukatif, dan sistem review, dapat diterapkan pada permasalahan keberlanjutan lainnya seperti pengelolaan limbah plastik, sampah elektronik, atau limbah organik lainnya.
+1. Berkontribusi pada pengembangan teknologi informasi dalam bidang waste management dan circular economy.
 
-Manfaat praktis dan bisnis penelitian ini mencakup pengembangan solusi yang dapat dikomersialkan dan diskalakan. Platform JelantahKu dapat menjadi fondasi untuk startup atau social enterprise yang fokus pada solusi waste management berbasis teknologi. Dengan model bisnis yang tepat (subscription, komisi dari pengumpul, atau partnership dengan organisasi lingkungan), platform ini memiliki potensi untuk menjadi sustainable dan menciptakan lapangan kerja baru dalam ekosistem daur ulang minyak jelantah. Penelitian ini juga menghasilkan data dan insights berharga tentang perilaku konsumen, pola pengumpulan, dan efektivitas pendekatan edukatif dalam mengubah perilaku konsumen terhadap waste management.
+2. Mendemonstrasikan integrasi praktis antara teknologi geolokasi, framework mobile modern, dan user-centered design.
 
-Manfaat lingkungan dari penelitian ini sangat signifikan. Dengan meningkatkan aksesibilitas sistem daur ulang, penelitian ini berkontribusi pada pengurangan minyak jelantah yang masuk ke lingkungan, khususnya sistem air dan tanah. Peningkatan 50% dalam volume pengumpulan minyak jelantah, yang merupakan target konservatif berdasarkan literatur terkait (Rahman & Islam, 2023), dapat mencegah pencemaran ribuan ton limbah organik per tahun. Konten edukatif tentang dampak lingkungan juga dapat mengubah persepsi dan perilaku konsumen dalam jangka panjang, menciptakan mindset keberlanjutan yang lebih luas di masyarakat.
+3. Menyediakan referensi untuk penelitian serupa dalam technology for social good dan sustainable development.
 
-Manfaat kesehatan publik dari penelitian ini berkaitan dengan peningkatan kesadaran tentang risiko kesehatan dari penggunaan minyak jelantah yang tidak terolah. Dengan mengurangi aksesibilitas minyak jelantah untuk penggunaan ulang tanpa pemurnian, dan meningkatkan kesadaran konsumen, penelitian ini secara tidak langsung berkontribusi pada pengurangan risiko penyakit yang terkait dengan konsumsi minyak jelantah berkualitas rendah. Modul edukatif dalam aplikasi menyediakan informasi akurat tentang komposisi minyak jelantah, proses degradasi, dan risiko kesehatan, membantu konsumen membuat keputusan yang lebih informed tentang pembelian dan penggunaan minyak goreng.
+4. Metodologi dapat diterapkan pada permasalahan keberlanjutan lainnya seperti limbah plastik, sampah elektronik, dan limbah organik lainnya.
 
-Manfaat sosial dan ekonomi penelitian ini mencakup pemberdayaan komunitas, khususnya pengumpul minyak jelantah yang sering berada di margin ekonomi. Dengan memberikan akses ke pasar yang lebih luas melalui platform, pengumpul dapat meningkatkan volume penjualan dan stabilitas pendapatan mereka. Platform ini juga menciptakan transparency dan fair pricing, melindungi pengumpul dari praktik eksploitasi. Dari sisi konsumen, terutama rumah tangga dan food service kecil, akses yang lebih mudah ke pengumpul formal mengurangi biaya transaksi dan risiko keterlibatan dengan pengumpul informal atau ilegal.
+### Manfaat Praktis dan Bisnis
 
-Manfaat dalam konteks pencapaian SDGs sangat relevan. Terhadap SDG 4 (Pendidikan Berkualitas), penelitian ini menyediakan platform yang meningkatkan akses ke pendidikan tentang isu lingkungan dan kesehatan. Terhadap SDG 12 (Konsumsi dan Produksi Berkelanjutan), platform ini secara langsung mendukung ekonomi sirkular dan pengelolaan limbah berkelanjutan. Terhadap SDG 13 (Aksi Iklim), dengan mendorong daur ulang dan mengurangi limbah organik yang masuk ke sistem air dan tanah, penelitian ini berkontribusi pada mitigasi emisi gas rumah kaca dan pengurangan dampak negatif terhadap iklim.
+1. Menghasilkan solusi yang dapat dikomersialkan dan diskalakan sebagai foundation untuk startup atau social enterprise.
+
+2. Menciptakan peluang model bisnis berkelanjutan melalui subscription, komisi, atau partnership.
+
+3. Menghasilkan data dan insights berharga tentang perilaku konsumen dan efektivitas pendekatan edukatif.
+
+4. Menciptakan lapangan kerja baru dalam ekosistem daur ulang minyak jelantah.
+
+### Manfaat Lingkungan
+
+1. Meningkatkan aksesibilitas sistem daur ulang untuk mengurangi minyak jelantah yang masuk ke lingkungan.
+
+2. Mencegah pencemaran limbah organik di sistem air dan tanah dalam skala ribuan ton per tahun.
+
+3. Mengubah persepsi dan perilaku konsumen melalui konten edukatif tentang dampak lingkungan.
+
+4. Mendukung mitigasi emisi gas rumah kaca melalui peningkatan daur ulang dan pengelolaan limbah berkelanjutan.
+
+### Manfaat Kesehatan Publik
+
+1. Meningkatkan kesadaran tentang risiko kesehatan dari penggunaan minyak jelantah yang tidak terolah.
+
+2. Mengurangi akses minyak jelantah untuk penggunaan ulang tanpa pemurnian yang memadai.
+
+3. Memberikan informasi akurat tentang komposisi, degradasi, dan risiko kesehatan minyak jelantah.
+
+4. Membantu konsumen membuat keputusan yang lebih informed tentang pembelian dan penggunaan minyak goreng.
+
+### Manfaat Sosial dan Ekonomi
+
+1. Memberdayakan komunitas pengumpul minyak jelantah melalui akses ke pasar yang lebih luas.
+
+2. Meningkatkan volume penjualan dan stabilitas pendapatan pengumpul.
+
+3. Menciptakan transparansi dan fair pricing untuk melindungi dari praktik eksploitasi.
+
+4. Mengurangi biaya transaksi dan risiko konsumen dengan akses mudah ke pengumpul formal.
+
+---
+
+## BATASAN PENELITIAN
+
+1. **Scope Geografis:** Penelitian ini berfokus pada implementasi pilot di area urban Indonesia (Jakarta, Surabaya, Bandung) dan tidak mencakup daerah rural dengan infrastruktur internet yang terbatas.
+
+2. **Periode Implementasi:** Durasi penelitian adalah 6 bulan untuk fase pilot, sehingga dampak jangka panjang (1-5 tahun) tidak dapat diukur dalam penelitian ini.
+
+3. **Sasaran Pengguna:** Fokus awal adalah rumah tangga urban dengan akses internet dan food service yang memiliki smartphone (Android/iOS), tidak termasuk pengguna tanpa perangkat digital.
+
+4. **Data Geolokasi:** Akurasi lokasi bergantung pada ketersediaan dan kualitas data dari pengumpul minyak jelantah yang terdaftar di platform, tidak mencakup pengumpul informal atau ilegal.
+
+5. **Keamanan Data:** Penelitian ini menggunakan proteksi standar JWT dan HTTPS, tetapi tidak mencakup penetration testing mendalam atau compliance audit ISO/IEC 27001.
+
+6. **Konten Edukatif:** Tutorial dan materi pendidikan dirancang berdasarkan konteks Indonesia dan mungkin memerlukan adaptasi untuk region atau bahasa lain.
+
+7. **Model Bisnis:** Penelitian fokus pada aspek teknis dan dampak sosial, bukan pada viabilitas finansial jangka panjang atau strategi monetisasi yang komprehensif.
+
+8. **Evaluasi Usability:** SUS evaluation dilakukan dengan 30-40 partisipan urban dan tidak mencakup evaluasi aksesibilitas untuk pengguna dengan disabilitas khusus.
+
+9. **Integrasi Sistem:** Platform tidak terintegrasi dengan sistem pembayaran e-commerce, asuransi, atau regulatory bodies yang mungkin diperlukan untuk operasi skala penuh.
+
+10. **Skalabilitas Infrastruktur:** Desain backend direncanakan untuk 1000-5000 pengguna aktif; skalabilitas untuk 100,000+ pengguna memerlukan engineering tambahan dan load testing ekstensif.
 
 ---
 
