@@ -16,7 +16,12 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.jelantahku.app"
+      "bundleIdentifier": "com.jelantahku.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Allow JelantahKu to use your location to find nearby collection centers",
+        "NSCameraUsageDescription": "Allow JelantahKu to access your camera for photo reviews",
+        "NSPhotoLibraryUsageDescription": "Allow JelantahKu to access your photo library for review photos"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -26,7 +31,10 @@
       "package": "com.jelantahku.app",
       "permissions": [
         "ACCESS_FINE_LOCATION",
-        "ACCESS_COARSE_LOCATION"
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
       ]
     },
     "web": {

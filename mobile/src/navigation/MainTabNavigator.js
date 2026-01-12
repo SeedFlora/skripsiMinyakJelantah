@@ -1,6 +1,6 @@
 /**
  * Main Tab Navigator
- * Bottom tab navigation for main app
+ * Bottom tab navigation for main app - Maps & Education Model
  */
 
 import React from 'react';
@@ -10,38 +10,75 @@ import { Ionicons } from '@expo/vector-icons';
 
 // Screens
 import HomeScreen from '../screens/main/HomeScreen';
-import ContainersScreen from '../screens/main/ContainersScreen';
-import ContainerDetailScreen from '../screens/main/ContainerDetailScreen';
-import AddContainerScreen from '../screens/main/AddContainerScreen';
+import MapsScreen from '../screens/main/MapsScreen';
+import LocationDetailScreen from '../screens/main/LocationDetailScreen';
+import TutorialScreen from '../screens/main/TutorialScreen';
+import TutorialDetailScreen from '../screens/main/TutorialDetailScreen';
+import AddReviewScreen from '../screens/main/AddReviewScreen';
 import HistoryScreen from '../screens/main/HistoryScreen';
 import ProfileScreen from '../screens/main/ProfileScreen';
-import PickupRequestScreen from '../screens/main/PickupRequestScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
-// Container Stack
-const ContainerStack = () => (
+// Maps Stack
+const MapsStack = () => (
   <Stack.Navigator>
     <Stack.Screen 
-      name="ContainersList" 
-      component={ContainersScreen}
-      options={{ title: 'Container Saya' }}
+      name="MapsList" 
+      component={MapsScreen}
+      options={{ 
+        title: 'Find Collection Centers',
+        headerShown: true,
+        headerStyle: { backgroundColor: '#4CAF50' },
+        headerTintColor: '#fff',
+        headerTitleStyle: { fontWeight: 'bold' }
+      }}
     />
     <Stack.Screen 
-      name="ContainerDetail" 
-      component={ContainerDetailScreen}
-      options={{ title: 'Detail Container' }}
+      name="LocationDetail" 
+      component={LocationDetailScreen}
+      options={{ 
+        title: 'Location Details',
+        headerStyle: { backgroundColor: '#4CAF50' },
+        headerTintColor: '#fff',
+        headerTitleStyle: { fontWeight: 'bold' }
+      }}
     />
     <Stack.Screen 
-      name="AddContainer" 
-      component={AddContainerScreen}
-      options={{ title: 'Tambah Container' }}
+      name="AddReview" 
+      component={AddReviewScreen}
+      options={{ 
+        title: 'Add Review',
+        headerShown: false
+      }}
+    />
+  </Stack.Navigator>
+);
+
+// Tutorial Stack
+const TutorialStack = () => (
+  <Stack.Navigator>
+    <Stack.Screen 
+      name="TutorialsList" 
+      component={TutorialScreen}
+      options={{ 
+        title: 'Educational Content',
+        headerShown: true,
+        headerStyle: { backgroundColor: '#4CAF50' },
+        headerTintColor: '#fff',
+        headerTitleStyle: { fontWeight: 'bold' }
+      }}
     />
     <Stack.Screen 
-      name="PickupRequest" 
-      component={PickupRequestScreen}
-      options={{ title: 'Request Pickup' }}
+      name="TutorialDetail" 
+      component={TutorialDetailScreen}
+      options={{ 
+        title: 'Tutorial',
+        headerStyle: { backgroundColor: '#4CAF50' },
+        headerTintColor: '#fff',
+        headerTitleStyle: { fontWeight: 'bold' }
+      }}
     />
   </Stack.Navigator>
 );
@@ -52,7 +89,12 @@ const HistoryStack = () => (
     <Stack.Screen 
       name="HistoryList" 
       component={HistoryScreen}
-      options={{ title: 'Riwayat Transaksi' }}
+      options={{ 
+        title: 'History',
+        headerStyle: { backgroundColor: '#4CAF50' },
+        headerTintColor: '#fff',
+        headerTitleStyle: { fontWeight: 'bold' }
+      }}
     />
   </Stack.Navigator>
 );
@@ -63,7 +105,12 @@ const ProfileStack = () => (
     <Stack.Screen 
       name="ProfileMain" 
       component={ProfileScreen}
-      options={{ title: 'Profil Saya' }}
+      options={{ 
+        title: 'Profile',
+        headerStyle: { backgroundColor: '#4CAF50' },
+        headerTintColor: '#fff',
+        headerTitleStyle: { fontWeight: 'bold' }
+      }}
     />
   </Stack.Navigator>
 );
@@ -77,8 +124,10 @@ const MainTabNavigator = () => {
 
           if (route.name === 'Home') {
             iconName = focused ? 'home' : 'home-outline';
-          } else if (route.name === 'Containers') {
-            iconName = focused ? 'cube' : 'cube-outline';
+          } else if (route.name === 'Maps') {
+            iconName = focused ? 'map' : 'map-outline';
+          } else if (route.name === 'Tutorial') {
+            iconName = focused ? 'book' : 'book-outline';
           } else if (route.name === 'History') {
             iconName = focused ? 'time' : 'time-outline';
           } else if (route.name === 'Profile') {
@@ -95,22 +144,27 @@ const MainTabNavigator = () => {
       <Tab.Screen 
         name="Home" 
         component={HomeScreen}
-        options={{ tabBarLabel: 'Beranda' }}
+        options={{ tabBarLabel: 'Home' }}
       />
       <Tab.Screen 
-        name="Containers" 
-        component={ContainerStack}
-        options={{ tabBarLabel: 'Container' }}
+        name="Maps" 
+        component={MapsStack}
+        options={{ tabBarLabel: 'Collection Centers' }}
+      />
+      <Tab.Screen 
+        name="Tutorial" 
+        component={TutorialStack}
+        options={{ tabBarLabel: 'Learn' }}
       />
       <Tab.Screen 
         name="History" 
         component={HistoryStack}
-        options={{ tabBarLabel: 'Riwayat' }}
+        options={{ tabBarLabel: 'History' }}
       />
       <Tab.Screen 
         name="Profile" 
         component={ProfileStack}
-        options={{ tabBarLabel: 'Profil' }}
+        options={{ tabBarLabel: 'Profile' }}
       />
     </Tab.Navigator>
   );
